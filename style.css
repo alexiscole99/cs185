@@ -14,15 +14,24 @@ nav * {
 }
 
 nav li {
-    margin: 20px;
+    margin: 40px;
 }
 
 nav li a {
     color: white;
     text-decoration: none;
+    font-size: larger;
 }
 
 body {
     margin-top: 80px;
     padding: 30px;
+}
+
+.grid-container {
+
+}
+
+.grid-item {
+    
 }
