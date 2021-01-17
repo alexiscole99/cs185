@@ -1,0 +1,28 @@
+nav {
+    background-color: gray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+nav * {
+    display: inline;
+}
+
+nav li {
+    margin: 20px;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    margin-top: 80px;
+    padding: 30px;
+}

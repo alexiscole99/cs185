@@ -1,29 +1,34 @@
 <DOCTYPE html>
 
 <html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
 <body>
     <nav>
-        <a href="text.html">Text</a>
-        <a href="image.html">Image</a>
-        <a href="video.html">Video</a>
-        <a href="table.html">Table</a>
+        <ul>
+            <li><a href="text.html">Text</a></li>
+            <li><a href="image.html">Image</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="table.html">Table</a></li>
+        </ul>
     </nav>
     <form>
         <label for="fname">First name:</label><br>
-        <input type="text" id="fname"><br>
+        <input type="text" id="fname" name="fname"><br>
         <label for="lname">Last name:</label><br>
-        <input type="text" id="lname"><br><br>
+        <input type="text" id="lname" name="lname"><br><br>
         <label for="grade">Grade Level:</label><br>
-        <input type ="radio" id="grade" value="Freshman">
+        <input type ="radio" id="grade" name="grade" value="Freshman">
         <label for="grade">Freshman</label><br>
-        <input type ="radio" id="grade" value="Sophomore">
+        <input type ="radio" id="grade" name="grade" value="Sophomore">
         <label for="grade">Sophomore</label><br>
-        <input type ="radio" id="grade" value="Junior">
+        <input type ="radio" id="grade" name="grade" value="Junior">
         <label for="grade">Junior</label><br>
-        <input type ="radio" id="grade" value="Senior">
-        <label for="grade">Senior</label><br>
-        <input type="submit" value="Submit"><br><br>
+        <input type ="radio" id="grade" name="grade" value="Senior">
+        <label for="grade">Senior</label><br><br>
+        <input type="submit" value="Submit">
         
     </form>
     
