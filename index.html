@@ -3,12 +3,15 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <script src="index.js"></script>
     </head>
 
     <body>
         <nav>
             <ul>
-                <li><a href="text.html">Text</a></li>
+                <li id="text" onclick = highlight_click(this.id)>
+                    <a href="text.html">Text</a>
+                </li>
                 <li><a href="image.html">Image</a></li>
                 <li><a href="video.html">Video</a></li>
                 <li><a href="table.html">Table</a></li>
