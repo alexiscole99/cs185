@@ -14,14 +14,16 @@ nav * {
 }
 
 nav li {
-    margin: 40px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-nav li .active {
+nav li.active {
     background-color: #b088f9;
 }
 
-nav li .hover {
+nav li.hover {
     background-color: #da9ff9;
 }
 
@@ -29,6 +31,7 @@ nav li a {
     color: whitesmoke;
     text-decoration: none;
     font-size: larger;
+    margin: 40px;
 }
 
 body {
