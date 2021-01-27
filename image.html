@@ -29,24 +29,66 @@
         </nav>
 
         <div class="container">
-            <figure class="item"><img src="images/amsterdam.png" width="200"></figure>
-            <figure class="item"><img src="images/berlin.png" width="200"></figure>
-            <figure class="item"><img src="images/big_sur.png" width="200"></figure>
-            <figure class="item"><img src="images/blue_sky.png" width="200"></figure>
-            <figure class="item"><img src="images/iceland.png" width="200"></figure>
-            <figure class="item"><img src="images/zaandam.png" width="200"></figure>
-            <figure class="item"><img src="images/amsterdam2.png" width="200"></figure>
-            <figure class="item"><img src="images/amsterdam3.png" width="200"></figure>
-            <figure class="item"><img src="images/copenhagen.png" width="200"></figure>
-            <figure class="item"><img src="images/elvin.png" width="200"></figure>
-            <figure class="item"><img src="images/iceland2.png" width="200"></figure>
-            <figure class="item"><img src="images/iceland3.png" width="200"></figure>
-            <figure class="item"><img src="images/lund.png" width="200"></figure>
-            <figure class="item"><img src="images/lund2.png" width="200"></figure>
-            <figure class="item"><img src="images/rowing.png" width="200"></figure>
-            <figure class="item"><img src="images/sb.png" width="200"></figure>
-            <figure class="item"><img src="images/sd.png" width="200"></figure>
+            <figure class="item">
+                <img id="0" src="images/amsterdam.png" width="200" onclick=openModal(this.id)>
+            </figure>
+            <figure class="item">
+                <img id="1" src="images/berlin.png" width="200" onclick=openModal(this.id)>
+            </figure>
+            <figure class="item">
+                <img id="2" src="images/big_sur.png" width="200" onclick=openModal(this.id)>
+            </figure>
+            <figure class="item">
+                <img id="3" src="images/blue_sky.png" width="200" onclick=openModal(this.id)>
+            </figure>
+            <figure class="item">
+                <img id="4" src="images/iceland.png" width="200" onclick=openModal(this.id)>
+            </figure>
+            <figure class="item">
+                <img id="5" src="images/zaandam.png" width="200" onclick=openModal(this.id)>
+            </figure>
+            <figure class="item">
+                <img id="6" src="images/amsterdam2.png" width="200" onclick=openModal(this.id)>
+            </figure>
+            <figure class="item">
+                <img id="7" src="images/amsterdam3.png" width="200" onclick=openModal(this.id)>
+            </figure>
+            <figure class="item">
+                <img id="8" src="images/copenhagen.png" width="200" onclick=openModal(this.id)>
+            </figure>
+            <figure class="item">
+                <img id="9" src="images/elvin.png" width="200" onclick=openModal(this.id)>
+            </figure>
+            <figure class="item">
+                <img id="10" src="images/iceland2.png" width="200" onclick=openModal(this.id)>
+            </figure>
+            <figure class="item">
+                <img id="11" src="images/iceland3.png" width="200" onclick=openModal(this.id)>
+            </figure>
+            <figure class="item">
+                <img id="12" src="images/lund.png" width="200" onclick=openModal(this.id)>
+            </figure>
+            <figure class="item">
+                <img id="13" src="images/lund2.png" width="200" onclick=openModal(this.id)>
+            </figure>
+            <figure class="item">
+                <img id="14" src="images/rowing.png" width="200" onclick=openModal(this.id)>
+            </figure>
+            <figure class="item">
+                <img id="15" src="images/sb.png" width="200" onclick=openModal(this.id)>
+            </figure>
+            <figure class="item">
+                <img id="16" src="images/sd.png" width="200" onclick=openModal(this.id)>
+            </figure>
         </div>
+
+        <div id="modal" class="modal">
+            <div id="modal-content" class="modal-content"></div>
+        </div>
+
+        <button id="top-button" class="top-button" display="none" onclick="toTop()">Back to top</button>
+        <script src="image.js"></script>
+
     </body>
 </html>
     

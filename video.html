@@ -29,12 +29,28 @@
         </nav>
 
         <div class="container">
-            <iframe src="https://www.youtube.com/embed/L_LUpnjgPso"
-             height="250" width="250"></iframe>
-            <iframe src="https://www.youtube.com/embed/ubNfkpbxXUs"
-             height="250" width="250"></iframe>
-            <iframe src="https://www.youtube.com/embed/bn9F19Hi1Lk"
-             height="250" width="250"></iframe>
+            <iframe id="0" src="https://www.youtube.com/embed/L_LUpnjgPso"
+             height="250" width="250" onclick=openModal(event,this.id)></iframe>
+            <iframe id="1" src="https://www.youtube.com/embed/ubNfkpbxXUs"
+             height="250" width="250" onclick=openModal(event,this.id)></iframe>
+            <iframe id="2" src="https://www.youtube.com/embed/bn9F19Hi1Lk"
+             height="250" width="250" onclick=openModal(event,this.id)></iframe>
+            <iframe id="3" src="https://www.youtube.com/embed/-yMS-z--1zE"
+            height="250" width="250" onclick=openModal(event,this.id)></iframe>
+            <iframe id="4" src="https://www.youtube.com/embed/Tx83KIH5Gv0"
+            height="250" width="250" onclick=openModal(event,this.id)></iframe>
+            <iframe id="5" src="https://www.youtube.com/embed/m_UGLf9mUg8"
+            height="250" width="250" onclick=openModal(event,this.id)></iframe>
+            <iframe id="6" src="https://www.youtube.com/embed/irefffYWDUY"
+            height="250" width="250" onclick=openModal(event,this.id)></iframe>
+            <iframe id="7" src="https://www.youtube.com/embed/UbxUSsFXYo4"
+            height="250" width="250" onclick=openModal(event,this.id)></iframe>
+            <iframe id="8" src="https://www.youtube.com/embed/0-7IHOXkiV8"
+            height="250" width="250" onclick=openModal(event,this.id)></iframe>
+        </div>
+
+        <div id="modal" class="modal">
+            <div id="modal-content" class="modal-content"></div>
         </div>
 
     </body>
