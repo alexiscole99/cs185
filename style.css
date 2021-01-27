@@ -47,6 +47,30 @@ body {
     grid-gap: 20px;
 }
 
+.container-old {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.container {
+    display: grid;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    margin-top: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 4fr));
+    grid-template-rows: auto;
+}
+
+.item {
+    flex-basis: auto;
+    flex: none;
+    align-self: auto;
+}
+
 .grid-item {
     width: 100%;
     height: 100%;
