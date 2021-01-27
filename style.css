@@ -102,7 +102,7 @@ td, th {
     background-color: rgba(0,0,0,0.4);
   }
 
-  .modal-content {
+.modal-content {
     /* referenced https://stackoverflow.com/questions/396145/how-to-vertically-center-a-div-element-for-all-browsers-using-css */
     position: absolute;
     top: 50%;
@@ -110,7 +110,29 @@ td, th {
     transform: translate(-50%, -50%);
     display: block;
     margin: auto auto; 
-    width: auto;
-    height: auto;
+    width: 80%;
+    /*height: auto;*/
     max-width: 700px;
-  }
+}
+
+.modal-content-video {
+    /* referenced https://stackoverflow.com/questions/396145/how-to-vertically-center-a-div-element-for-all-browsers-using-css */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    margin: auto auto; 
+    width: 80%;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    max-width: 700px;
+}
+
+
+
+.video {
+    pointer-events: none;
+}
