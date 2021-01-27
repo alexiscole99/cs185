@@ -74,11 +74,22 @@ var landscape = [1,3,4,5,8,9,11,14,15,16];
 
 function openModal(id) {
     var modal = document.getElementById("modal");
-    var modalContent = document.getElementById("modal-content");
+    var modalContentPort = document.getElementById("modal-content-p");
+    var modalContentLand = document.getElementById("modal-content-l");
     var image = document.getElementById(id);
     var src = image.src;
     var width = "100%";
-    modalContent.innerHTML = "<img src="+ src +" width="+ width +">";
+    var height = "100%";
+    if(portrait.includes(Number(id))) {
+        modalContentLand.style.display = "none";
+        modalContentPort.innerHTML = "<img src="+ src +" height="+ height +">";
+        modalContentPort.style.display = "block";
+    } else if(landscape.includes(Number(id))){
+        modalContentPort.style.display = "none";
+        modalContentLand.innerHTML = "<img src="+ src +" width="+ width +">";
+        modalContentLand.style.display = "block";
+    }
+
     modal.style.display = "block";
 }
 

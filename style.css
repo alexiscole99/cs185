@@ -90,6 +90,7 @@ td, th {
     color: whitesmoke;
 }
 
+/*styling for image and video modals */
 .modal {
     display: none; 
     position: fixed;
@@ -102,17 +103,28 @@ td, th {
     background-color: rgba(0,0,0,0.4);
   }
 
-.modal-content {
+.modal-content-landscape {
     /* referenced https://stackoverflow.com/questions/396145/how-to-vertically-center-a-div-element-for-all-browsers-using-css */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: block;
+    display: none;
     margin: auto auto; 
     width: 80%;
-    /*height: auto;*/
     max-width: 700px;
+}
+
+.modal-content-portrait {
+    /* referenced https://stackoverflow.com/questions/396145/how-to-vertically-center-a-div-element-for-all-browsers-using-css */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    margin: auto auto; 
+    height: 80%;
+    max-height: 700px;
 }
 
 .modal-content-video {
