@@ -3,27 +3,75 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <script src="video.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     <body>
         <nav>
             <ul>
-                <li><a href="text.html">Text</a></li>
-                <li><a href="image.html">Image</a></li>
-                <li><a href="video.html">Video</a></li>
-                <li><a href="table.html">Table</a></li>
+                <li id="text" onmouseover=highlightHover(this.id) onmouseout=unhighlightHover(this.id)>
+                    <a href="text.html">Text</a>
+                </li>
+                <li id="image" onmouseover=highlightHover(this.id) onmouseout=unhighlightHover(this.id)>
+                    <a href="image.html">Image</a>
+                </li>
+                <li id="video" class="active">
+                    <a href="video.html">Video</a>
+                </li>
+                <li id="table" onmouseover=highlightHover(this.id) onmouseout=unhighlightHover(this.id)>
+                    <a href="table.html">Table</a>
+                </li>
+                <li id="email" onmouseover=highlightHover(this.id) onmouseout=unhighlightHover(this.id)>
+                    <a href="email.html">Email Validation</a>
+                </li>
             </ul>
         </nav>
 
-        <div class="video-grid-container">
-            <iframe src="https://www.youtube.com/embed/L_LUpnjgPso"
-             height="250" width="250"></iframe>
-            <iframe src="https://www.youtube.com/embed/ubNfkpbxXUs"
-             height="250" width="250"></iframe>
-            <iframe src="https://www.youtube.com/embed/bn9F19Hi1Lk"
-             height="250" width="250"></iframe>
+        <div class="container">
+            <div class="item" onclick=openModal(0)>
+                <iframe id="0" class="video" src="https://www.youtube.com/embed/L_LUpnjgPso"
+                height="250" width="250" ></iframe>
+            </div>
+            <div class="item" onclick=openModal(1)>
+                <iframe id="1" class="video"src="https://www.youtube.com/embed/ubNfkpbxXUs"
+                height="250" width="250"></iframe>
+            </div>
+            <div class="item" onclick=openModal(2)>
+                <iframe id="2" class="video"src="https://www.youtube.com/embed/bn9F19Hi1Lk"
+                height="250" width="250"></iframe>
+            </div>
+            <div class="item" onclick=openModal(3)>
+                <iframe id="3" class="video" src="https://www.youtube.com/embed/-yMS-z--1zE"
+                height="250" width="250"></iframe>
+            </div>
+            <div class="item" onclick=openModal(4)>
+                <iframe id="4" class="video" src="https://www.youtube.com/embed/Tx83KIH5Gv0"
+                height="250" width="250"></iframe>
+            </div>
+            <div class="item" onclick=openModal(5)>
+                <iframe id="5" class="video" src="https://www.youtube.com/embed/m_UGLf9mUg8"
+                height="250" width="250"></iframe>
+            </div>
+            <div class="item" onclick=openModal(6)>
+                <iframe id="6" class="video" src="https://www.youtube.com/embed/irefffYWDUY"
+                height="250" width="250" ></iframe>
+            </div>
+            <div class="item" onclick=openModal(7)>
+                <iframe id="7" class="video" src="https://www.youtube.com/embed/UbxUSsFXYo4"
+                height="250" width="250"></iframe>
+            </div>
+            <div class="item" onclick=openModal(8)>
+                <iframe id="8" class="video" src="https://www.youtube.com/embed/0-7IHOXkiV8"
+                height="250" width="250" ></iframe>
+            </div>
+            
         </div>
 
+        <div id="modal" class="modal">
+            <div id="modal-content" class="modal-content-video"></div>
+        </div>
+        <script src="video.js"></script> 
     </body>
 </html>
     

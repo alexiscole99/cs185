@@ -1,0 +1,40 @@
+<DOCTYPE html>
+
+    <html>
+        <head>
+            <link rel="stylesheet" href="style.css">
+            <script src="index.js"></script>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        </head>
+    
+        <body>
+            <nav>
+                <ul>
+                    <li id="text" onmouseover=highlightHover(this.id) onmouseout=unhighlightHover(this.id)>
+                        <a href="text.html">Text</a>
+                    </li>
+                    <li id="image" onmouseover=highlightHover(this.id) onmouseout=unhighlightHover(this.id)>
+                        <a href="image.html">Image</a>
+                    </li>
+                    <li id="video" onmouseover=highlightHover(this.id) onmouseout=unhighlightHover(this.id)>
+                        <a href="video.html">Video</a>
+                    </li>
+                    <li id="table" onmouseover=highlightHover(this.id) onmouseout=unhighlightHover(this.id)>
+                        <a href="table.html">Table</a>
+                    </li>
+                    <li id="email" class="active">
+                        <a href="email.html">Email Validation</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <label for="email">Email: </label>
+            <input type="text" id="address">
+            <button onclick=validateEmail()>Submit</button>
+
+            <div id="content"></div>
+            <script src="email.js"></script>
+        </body>
+    </html>
+    
+    </DOCTYPE>

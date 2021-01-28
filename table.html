@@ -3,15 +3,28 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <script src="table.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     <body>
         <nav>
             <ul>
-                <li><a href="text.html">Text</a></li>
-                <li><a href="image.html">Image</a></li>
-                <li><a href="video.html">Video</a></li>
-                <li><a href="table.html">Table</a></li>
+                <li id="text" onmouseover=highlightHover(this.id) onmouseout=unhighlightHover(this.id)>
+                    <a href="text.html">Text</a>
+                </li>
+                <li id="image" onmouseover=highlightHover(this.id) onmouseout=unhighlightHover(this.id)>
+                    <a href="image.html">Image</a>
+                </li>
+                <li id="video" onmouseover=highlightHover(this.id) onmouseout=unhighlightHover(this.id)>
+                    <a href="video.html">Video</a>
+                </li>
+                <li id="table" class="active">
+                    <a href="table.html">Table</a>
+                </li>
+                <li id="email" onmouseover=highlightHover(this.id) onmouseout=unhighlightHover(this.id)>
+                    <a href="email.html">Email Validation</a>
+                </li>
             </ul>
         </nav>
 
