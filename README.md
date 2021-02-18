@@ -1,1 +1,1 @@
-# cs185_pa1
+# cs185 Human Computer Interaction
